@@ -10,8 +10,6 @@ We utilized the **KoPolitics-Benchmark** dataset available [here](https://github
 
 ## Results
 
-## Results
-
 The Korean News Political Opinion Predictor achieved promising results in classifying political orientation and pro-government sentiment of Korean news articles. Here are some highlights from the data analysis and model predictions:
 
 - **Political Orientation Analysis:**
@@ -32,9 +30,12 @@ The Korean News Political Opinion Predictor achieved promising results in classi
   - Users can explore the political landscape of media by selecting articles from a dropdown list. Upon selection, the application not only displays the content of the article but also visualizes the model’s predicted political orientation and the true political orientation using color-coded results.
   - These color visualizations offer an intuitive way to compare predictions against actual orientations, thereby illustrating the nuanced landscape of media perspectives and enhancing the user's understanding of the model's performance.
 
-
+🇰🇷 **Korean Version:**
 
 ![Korean-gif](https://github.com/user-attachments/assets/e92734d0-7d61-4969-9105-100741b79b64)
+
+🇺🇸/ 🇨🇦/🇬🇧/ **English Version:**
+
 ![English-gif](https://github.com/user-attachments/assets/38befaf1-7015-4573-a8d7-46473e538bcc)
 
 ## Installation
