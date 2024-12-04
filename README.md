@@ -15,7 +15,7 @@ The Korean News Political Opinion Predictor achieved promising results in classi
 - **Political Orientation Analysis:**
   - The model was able to categorize news articles into five distinct political orientations: Conservative, Moderate Conservative, Moderate, Moderate Liberal, and Liberal.
   - The distribution of political orientations in our test set showed a significant number of articles classified as Moderate (42.91%) and Moderate Liberal (27.84%), indicating a prevalence of centrist views in the sampled news.
-  - 
+  
 ![IMG_0071](https://github.com/user-attachments/assets/c98d3ebf-044b-422c-a38a-59453af5de85)
 
 - **Government Sentiment Analysis:**
