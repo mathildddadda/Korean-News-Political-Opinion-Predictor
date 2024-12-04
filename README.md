@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Hello! AI팬분들, 환영합니다! This is my first ~big~ project. This project was created to explore and enhance my coding skills in Python. I've been self-learning Python and with the aid of AI tools, I've gained a better understanding of how Machine Learning models operate. Motivated by my undergraduate studies, I aimed to apply this knowledge practically. The core of this project involves analyzing Korean news articles to classify them based on their political orientation and level of pro-government sentiment.
+Hello! AI팬분들, 환영합니다! This is my first *big* project. This project was created to explore and enhance my coding skills in Python. I've been self-learning Python and with the aid of AI tools, I've gained a better understanding of how Machine Learning models operate. Motivated by my undergraduate studies, I aimed to apply this knowledge practically. The core of this project involves analyzing Korean news articles to classify them based on their political orientation and level of pro-government sentiment.
 
 The objective was to train a model, specifically a RoBERTa model, to predict the political orientation of a news article. Additionally, I performed data analysis to gain insights into the dataset.
 
