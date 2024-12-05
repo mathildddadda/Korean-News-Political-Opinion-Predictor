@@ -49,7 +49,7 @@ The Korean News Political Opinion Predictor achieved promising results in classi
 
 ## Repository Overview
 
-The code used to pre-process the data, perform data analysis, train the model and evaluate it can be found [here](). The code of the web application can be found [here](). The datasets used can also be found in [this]() folder of the repository.
+The code used to pre-process the data, perform data analysis, train the model and evaluate it can be found [here](https://github.com/mathildddadda/Korean-News-Political-Opinion-Predictor/blob/main/political_orientation_training.ipynb). The code of the web application can be found [here](https://github.com/mathildddadda/Korean-News-Political-Opinion-Predictor/blob/main/web_visualization.py). The datasets used can also be found in [this](https://github.com/mathildddadda/Korean-News-Political-Opinion-Predictor/tree/main/political_orientation_dataset) folder of the repository. Note that when training the models, I saved them to a folder named `political_orientation_models`, but due to their large size, I couldn't upload them on this repository.
 
 ## Installation
 
