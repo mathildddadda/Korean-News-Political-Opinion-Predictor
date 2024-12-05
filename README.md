@@ -24,15 +24,15 @@ The Korean News Political Opinion Predictor achieved promising results in classi
 
  ![IMG_3381](https://github.com/user-attachments/assets/6e280aca-305b-44c8-8072-60704e27240e)
 
-- **Political Orientation and Level of Pro-Government Sentiment grouped together** 
-  -  I also aimed to explore if the level of pro-government sentiment was correlated in any way to the political orientation of the articles. To do so, I plotted a similar graph as above, showing the distribution of the level of pro-government sentiment but showed the distribution of political opinion on each bar.
-  -  My experiment revealed that artcles criticizing the government were mostly Liberal, while articles advocating for the government were mostly moderate conservative / conservative. We clearly see this in the graph below, with more bluye in the critisicm and more red in the bar of advocacy...
+- **Political Orientation and Level of Pro-Government Sentiment Analysis**
+  - I also aimed to explore potential correlations between the level of pro-government sentiment and the political orientation of news articles. To achieve this, I plotted a graph that not only shows the distribution of pro-government sentiment but also overlays the political orientation for each sentiment category.
+  - The findings from this graph are quite revealing: articles that criticize the government tend to predominantly exhibit `Liberal` orientations, while those expressing support are more often `Moderate Conservative` or `Conservative`. This trend is clearly visualized in the graph, with `liberal criticism` marked by more extensive use of blue tones and `conservative support` highlighted in red.
 
 ![IMG_7038](https://github.com/user-attachments/assets/a04b568a-af64-4bb0-8103-aae4d207286d)
 
 - **Training results:**
   - The RoBERTa model was fine-tuned on the articles with the task of predicting their political orientation (it does not predict the level of pro-government sentiment).
-  - The final accuracy obtained on our test set is 48.0% which means that our model correctly classifies the political opinion of an article 50% of the time. I realize that this could be improved by using bigger and more performant models, for which I don't have the computational power to use. Howver, considering there are 5 levels possible for political opinion, 50% is still a good score.
+  - The final accuracy obtained on our test set is 48.0% which means that our model correctly classifies the political opinion of an article about 50% of the time. I realize that this could be improved by using bigger and more performant models, for which I don't have the computational power to use. However, considering there are 5 possible levels of classifying political opinion, 50% is still a good score.
 
 - **Interactive Analysis:**
   - I also developed a web application, equipped with a Streamlit interface available in both English and Korean.
