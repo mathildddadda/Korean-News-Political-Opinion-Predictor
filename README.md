@@ -24,24 +24,23 @@ The Korean News Political Opinion Predictor achieved promising results in classi
 
  ![IMG_3381](https://github.com/user-attachments/assets/6e280aca-305b-44c8-8072-60704e27240e)
 
-- **Political Orientation and Level of Pro-Government Sentiment Analysis**
-  - I also aimed to explore potential correlations between the level of pro-government sentiment and the political orientation of news articles. To achieve this, I plotted a graph that not only shows the distribution of pro-government sentiment but also overlays the political orientation for each sentiment category.
-  - The findings from this graph are quite revealing: articles that criticize the government tend to predominantly exhibit `Liberal` orientations, while those expressing support are more often `Moderate Conservative` or `Conservative`. This trend is clearly visualized in the graph, with `liberal criticism` marked by more extensive use of blue tones and `conservative support` highlighted in red.
+- **Political Orientation and Level of Pro-Government Sentiment Analysis:**
+  - In this analysis I aimed to explore the potential correlations between the level of pro-government sentiment and the political orientation of news articles. A graph was plotted that not only shows the distribution of pro-government sentiment but also overlays the political orientation for each sentiment category.
+  - The findings are revealing: articles that criticize the government are predominantly `Liberal`, while those expressing support are often `Moderate Conservative` or `Conservative`. This trend is visually represented, with `liberal criticism` marked by extensive use of blue tones and `conservative support` highlighted in red.
 
 ![IMG_7038](https://github.com/user-attachments/assets/a04b568a-af64-4bb0-8103-aae4d207286d)
 
-- **Training results:**
-  - The RoBERTa model was fine-tuned on the articles with the task of predicting their political orientation (it does not predict the level of pro-government sentiment).
-  - The final accuracy obtained on our test set is 48.0% which means that our model correctly classifies the political opinion of an article about 50% of the time. I realize that this could be improved by using bigger and more performant models, for which I don't have the computational power to use. However, considering there are 5 possible levels of classifying political opinion, 50% is still a good score.
+- **Training Results:**
+  - The RoBERTa model was fine-tuned to predict the political orientation of articles. It achieved an accuracy of 48.0% on the test set. This means that the model correctly predicts the political orientation of an article about half of the time. While there is potential for improvement, I realized that would only be possible if I used a larger, more computationally demanding model, which I currently do not have the computational power for. Nonetheless, achieving nearly 50% accuracy is quite good considering the model distinguishes among five distinct political orientations.
 
 - **Interactive Analysis:**
-  - I also developed a web application, equipped with a Streamlit interface available in both English and Korean.
-  - Users can explore the political landscape of media by selecting articles from a dropdown list. Upon selection, the application not only displays the content of the article but also visualizes the model’s predicted political orientation and the true political orientation using color-coded results.
-  - These color visualizations offer an intuitive way to compare predictions against actual orientations, thereby illustrating the nuanced landscape of media perspectives and enhancing the user's understanding of the model's performance.
+  - A web application was developed, featuring a Streamlit interface available in both English and Korean, allowing users to explore the media landscape.
+  - Users can select articles from a dropdown list. Upon selection, the application displays the content of the article and visualizes both the model’s predicted and actual political orientations using color codes.
+  - These color visualizations provide an intuitive way to compare predictions with actual orientations, illustrating the nuanced landscape of media perspectives and enhancing understanding of the model's performance.
 
 🇰🇷 **Korean Version:**
 
-![Korean-gif](https://github.com/user-attachments/assets/e92734d0-7d61-4969-9105-100741b79b64)
+![Korean-gif](https://github.com/user-attachments/assets/008a8bc4-2588-4dfc-b37e-fc31a4992e5a)
 
 🇺🇸/🇨🇦/🇬🇧/ **English Version:**
 
