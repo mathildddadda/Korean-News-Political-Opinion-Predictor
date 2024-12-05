@@ -6,15 +6,15 @@ Hello! AI팬분들, 환영합니다! This is my first *big* project. This projec
 
 The objective was to train a model, specifically a RoBERTa model, to predict the political orientation of a news article. Additionally, I performed data analysis to gain insights into the dataset.
 
-We utilized the **KoPolitics-Benchmark** dataset available [here](https://github.com/Kdavid2355/KoPolitic-Benchmark-Dataset/tree/main) and fine-tuned a RoBERTa model from Hugging Face 🤗, which can be found [here](https://huggingface.co/klue/roberta-base).
+I used the **KoPolitics-Benchmark** dataset available [here](https://github.com/Kdavid2355/KoPolitic-Benchmark-Dataset/tree/main) and fine-tuned a RoBERTa model from Hugging Face 🤗, which can be found [here](https://huggingface.co/klue/roberta-base).
 
 ## Results
 
-The Korean News Political Opinion Predictor achieved promising results in classifying political orientation and pro-government sentiment of Korean news articles. Here are some highlights from the data analysis and model predictions:
+The Korean News Political Opinion Predictor achieved promising results in classifying political orientation of Korean news articles. Here are some highlights from the data analysis:
 
 - **Political Orientation Analysis:**
   - The model was able to categorize news articles into five distinct political orientations: Conservative, Moderate Conservative, Moderate, Moderate Liberal, and Liberal.
-  - The distribution of political orientations in our test set showed a significant number of articles classified as Moderate (42.91%) and Moderate Liberal (27.84%), indicating a prevalence of centrist views in the sampled news.
+  - The distribution of political orientations in our train set showed a significant number of articles classified as Moderate (42.91%) and Moderate Liberal (27.84%), indicating a prevalence of centrist views in the news I used to fine-tune our model.
   
 ![IMG_0071](https://github.com/user-attachments/assets/c98d3ebf-044b-422c-a38a-59453af5de85)
 
@@ -22,11 +22,20 @@ The Korean News Political Opinion Predictor achieved promising results in classi
   - The level of pro-government sentiment was also analyzed, ranging from 'None' to 'Strong Advocacy'.
   - The majority of articles exhibited 'None' (40.71%), indicating a neutral stance towards the government, followed by moderate criticism (19.78%).
 
+ ![IMG_3381](https://github.com/user-attachments/assets/6e280aca-305b-44c8-8072-60704e27240e)
+
+- **Political Orientation and Level of Pro-Government Sentiment grouped together** 
+  -  I also aimed to explore if the level of pro-government sentiment was correlated in any way to the political orientation of the articles. To do so, I plotted a similar graph as above, showing the distribution of the level of pro-government sentiment but showed the distribution of political opinion on each bar.
+  -  My experiment revealed that artcles criticizing the government were mostly Liberal, while articles advocating for the government were mostly moderate conservative / conservative. We clearly see this in the graph below, with more bluye in the critisicm and more red in the bar of advocacy...
+
 ![IMG_7038](https://github.com/user-attachments/assets/a04b568a-af64-4bb0-8103-aae4d207286d)
 
+- **Training results:**
+  - The RoBERTa model was fine-tuned on the articles with the task of predicting their political orientation (it does not predict the level of pro-government sentiment).
+  - The final accuracy obtained on our test set is 48.0% which means that our model correctly classifies the political opinion of an article 50% of the time. I realize that this could be improved by using bigger and more performant models, for which I don't have the computational power to use. Howver, considering there are 5 levels possible for political opinion, 50% is still a good score.
 
 - **Interactive Analysis:**
-  - The web application, equipped with a Streamlit interface available in both English and Korean, makes it accessible to a broader audience.
+  - I also developed a web application, equipped with a Streamlit interface available in both English and Korean.
   - Users can explore the political landscape of media by selecting articles from a dropdown list. Upon selection, the application not only displays the content of the article but also visualizes the model’s predicted political orientation and the true political orientation using color-coded results.
   - These color visualizations offer an intuitive way to compare predictions against actual orientations, thereby illustrating the nuanced landscape of media perspectives and enhancing the user's understanding of the model's performance.
 
@@ -34,9 +43,13 @@ The Korean News Political Opinion Predictor achieved promising results in classi
 
 ![Korean-gif](https://github.com/user-attachments/assets/e92734d0-7d61-4969-9105-100741b79b64)
 
-🇺🇸/ 🇨🇦/🇬🇧/ **English Version:**
+🇺🇸/🇨🇦/🇬🇧/ **English Version:**
 
 ![English-gif](https://github.com/user-attachments/assets/38befaf1-7015-4573-a8d7-46473e538bcc)
+
+## Repository Overview
+
+The code used to pre-process the data, perform data analysis, train the model and evaluate it can be found [here](). The code of the web application can be found [here](). The datasets used can also be found in [this]() folder of the repository.
 
 ## Installation
 
